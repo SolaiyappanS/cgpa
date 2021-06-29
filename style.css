@@ -42,3 +42,9 @@ input:focus {
   background-color: #ffffffdd;
   color: #f36356;
 }
+h6 a{
+  color: white;
+}
+a:hover{
+  background-color: white;
+}
