@@ -25,7 +25,7 @@ function calculate() {
     cred8 = Number(cred8);
 
     var result = (gpa1*cred1 + gpa2*cred2 + gpa3*cred3 + gpa4*cred4 + gpa5*cred5 + gpa6*cred6 + gpa7*cred7 + gpa8*cred8)/(cred1+cred2+cred3+cred4+cred5+cred6+cred7+cred8);
-
-    document.getElementById("result").innerHTML= "Your CGPA is "+result+"<br>Round off to 2 or 3 decimal places";
+    result = result.toFixed(3);
+    document.getElementById("result").innerHTML= "Your CGPA is "+result;
 
 }
