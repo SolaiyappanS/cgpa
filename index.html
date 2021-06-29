@@ -17,7 +17,8 @@
 		<h1 style="color:white;">CGPA Calculator</h1><br>
         
 	<h6 style="color: aliceblue;">For knowing how many credits you earned, visit tng3.tce.edu
-    <br>Subtract the credit of not cleared subjects from enrolled credits in that semester (if any)</h6>
+    <br>Subtract the credit of not cleared subjects from enrolled credits in that semester (if any)
+    <br>Leave the columns which you didn't get result yet unfilled</h6>
     <br>	<center>	
     <table class="form">
         <tr>
@@ -61,6 +62,21 @@
             </td><td>
                 <input type="number" id="cred6" placeholder="credits" min="0">
             </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="gpa7" placeholder="VIIth Sem GPA" min="0" max="10">
+            </td><td>
+                <input type="number" id="cred7" placeholder="credits" min="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="gpa7" placeholder="VIIIth Sem GPA" min="0" max="10">
+            </td><td>
+                <input type="number" id="cred7" placeholder="credits" min="0">
+            </td>
+        </tr>
 	</table>
     <br>
     <input type="button" onclick="calculate()" value="Calculate CGPA">
