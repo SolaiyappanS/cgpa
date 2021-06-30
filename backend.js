@@ -26,11 +26,12 @@ function calculate() {
 
     var result = (gpa1*cred1 + gpa2*cred2 + gpa3*cred3 + gpa4*cred4 + gpa5*cred5 + gpa6*cred6 + gpa7*cred7 + gpa8*cred8)/(cred1+cred2+cred3+cred4+cred5+cred6+cred7+cred8);
     result = result.toFixed(3);
-    if(gpa1>10 || gpa2>10 || gpa3>10 || gpa4>10 || gpa5>10 || gpa6>10 || gpa7>10 || gpa8>10)
-    document.getElementById("result").innerHTML= "GPA can't be greater than 10.\nEnter proper values and calculate";
-    else if(cred1==0 && cred2==0 && cred3==0 && cred4==0 && cred5==0 && cred6==0 && cred7==0 && cred8==0)
-    document.getElementById("result").innerHTML= "Enter proper values and calculate";
+    if(gpa1>10 || gpa2>10 || gpa3>10 || gpa4>10 || gpa5>10 || gpa6>10 || gpa7>10 || gpa8>10
+        || gpa1<0 || gpa2<0 || gpa3<0 || gpa4<0 || gpa5<0 || gpa6<0 || gpa7<0 || gpa8<0
+        || cred1<0 || cred2<0 || cred3<0 || cred4<0 || cred5<0 || cred6<0 || cred7<0 || cred8<0
+        || (cred1<=0 && cred2<=0 && cred3<=0 && cred4<=0 && cred5<=0 && cred6<=0 && cred7<=0 && cred8<=0))
+        document.getElementById("result").innerHTML= "Enter proper values and calculate";
     else
-    document.getElementById("result").innerHTML= "Your CGPA is "+result;
+        document.getElementById("result").innerHTML= "Your CGPA is "+result;
 
 }
