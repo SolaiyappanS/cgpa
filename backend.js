@@ -35,3 +35,26 @@ function calculate() {
         document.getElementById("result").innerHTML= "Your CGPA is "+result;
 
 }
+
+var count = 0;
+element = document.body;
+
+function swapmode() {
+    count++;
+    if(count%5==1)
+        element.classList.toggle("black");
+    else if(count%5==2) {
+        element.classList.toggle("black");
+        element.classList.toggle("blue");
+    }
+    else if(count%5==3) {
+        element.classList.toggle("blue");
+        element.classList.toggle("green");
+    }
+    else if(count%5==4) {
+        element.classList.toggle("green");
+        element.classList.toggle("purple");
+    }
+    else
+        element.classList.toggle("purple");
+    }
