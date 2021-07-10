@@ -14,80 +14,106 @@
   </head>
   <body>
     <div class="wrapper">
-	<div class="container">
-		<h1 style="color:white;">CGPA Calculator</h1>
-        <h6 style="color: white;">Developed by <a href="https://www.linkedin.com/in/solaiyappan-shanmuganathan-2a89121b3/">Solaiyappan Shanmuganathan</a></h6><br>
+	<div class="container">	<center><br>
+		<h1>CGPA Calculator</h1>
+        <p>Developed by <a href="https://www.linkedin.com/in/solaiyappan-shanmuganathan-2a89121b3/">Solaiyappan Shanmuganathan</a></p><br>
         
-	<h6 style="color: white;">For knowing how many credits you earned, visit tng3.tce.edu
+	<p>For knowing how many credits you earned, visit tng3.tce.edu
     <br>Subtract the credit of not cleared subjects from enrolled credits in that semester (if any)
-    <br>Leave the columns which you didn't get result yet unfilled</h6>
-    <br>	<center>
-        <button onclick="swapmode()">
+    <br>Leave the columns which you didn't get result yet unfilled</p>
+    <br>
+        <button onclick="swapmode()" class="button">
             <i class="fas fa-adjust"></i> Theme
         </button>	<br>
     <table class="form">
         <tr>
+            <td class="lable">
+                1st Semester:
+            </td>
             <td>
-                <input type="number" id="gpa1" placeholder="1st Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='1st Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa1" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
                 </td><td>
-                <input type="number" id="cred1" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred1" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                2nd Semester:
+            </td>
             <td>
-                <input type="number" id="gpa2" placeholder="2nd Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='2nd Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa2" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred2" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred2" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                3rd Semester:
+            </td>
             <td>
-                <input type="number" id="gpa3" placeholder="3rd Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='3rd Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa3" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred3" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred3" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                4th Semester:
+            </td>
             <td>
-                <input type="number" id="gpa4" placeholder="4th Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='4th Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa4" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred4" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred4" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                5th Semester:
+            </td>
             <td>
-                <input type="number" id="gpa5" placeholder="5th Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='5th Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa5" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred5" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred5" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                6th Semester:
+            </td>
             <td>
-                <input type="number" id="gpa6" placeholder="6th Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='6th Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa6" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred6" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred6" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                7th Semester:
+            </td>
             <td>
-                <input type="number" id="gpa7" placeholder="7th Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='7th Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa7" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred7" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred7" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
         <tr>
+            <td class="lable">
+                8th Semester:
+            </td>
             <td>
-                <input type="number" id="gpa8" placeholder="8th Sem GPA" onfocus="this.placeholder=''" onblur="this.placeholder='8th Sem GPA'" min="0" max="10">
+                <input type="number" id="gpa8" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
             </td><td>
-                <input type="number" id="cred8" placeholder="Earned credits" onfocus="this.placeholder=''" onblur="this.placeholder='Earned credits'" min="0">
+                <input type="number" id="cred8" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
             </td>
         </tr>
 	</table>
     <br>
-    <input type="button" onclick="calculate()" value="Calculate CGPA">
+    <button onclick="calculate()" class="button">
+        Calculate CGPA
+    </button>
     
     <br>
-    <div id="result" style="color: aliceblue;"> </div>
+    <div id="result"> </div><br>
     </center>
 	</div>
 </div>

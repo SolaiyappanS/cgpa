@@ -41,20 +41,36 @@ element = document.body;
 
 function swapmode() {
     count++;
-    if(count%5==1)
+    if(count%9==1)
         element.classList.toggle("black");
-    else if(count%5==2) {
+    else if(count%9==2) {
         element.classList.toggle("black");
-        element.classList.toggle("blue");
+        element.classList.toggle("yellow");
     }
-    else if(count%5==3) {
-        element.classList.toggle("blue");
+    else if(count%9==3) {
+        element.classList.toggle("yellow");
         element.classList.toggle("green");
     }
-    else if(count%5==4) {
+    else if(count%9==4) {
         element.classList.toggle("green");
+        element.classList.toggle("blue");
+    }
+    else if(count%9==5) {
+        element.classList.toggle("blue");
+        element.classList.toggle("white");
+    }
+    else if(count%9==6) {
+        element.classList.toggle("white");
         element.classList.toggle("purple");
+    }
+    else if(count%9==7) {
+        element.classList.toggle("purple");
+        element.classList.toggle("brown");
+    }
+    else if(count%9==8) {
+        element.classList.toggle("brown");
+        element.classList.toggle("lightblue");
     }
     else
-        element.classList.toggle("purple");
+        element.classList.toggle("lightblue");
     }
