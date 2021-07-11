@@ -45,32 +45,32 @@ function swapmode() {
         element.classList.toggle("black");
     else if(count%9==2) {
         element.classList.toggle("black");
-        element.classList.toggle("yellow");
+        element.classList.toggle("whitegreen");
     }
     else if(count%9==3) {
-        element.classList.toggle("yellow");
+        element.classList.toggle("whitegreen");
         element.classList.toggle("green");
     }
     else if(count%9==4) {
         element.classList.toggle("green");
-        element.classList.toggle("blue");
+        element.classList.toggle("brown");
     }
     else if(count%9==5) {
-        element.classList.toggle("blue");
-        element.classList.toggle("white");
+        element.classList.toggle("brown");
+        element.classList.toggle("whiteblue");
     }
     else if(count%9==6) {
-        element.classList.toggle("white");
-        element.classList.toggle("purple");
+        element.classList.toggle("whiteblue");
+        element.classList.toggle("blue");
     }
     else if(count%9==7) {
+        element.classList.toggle("blue");
         element.classList.toggle("purple");
-        element.classList.toggle("brown");
     }
     else if(count%9==8) {
-        element.classList.toggle("brown");
-        element.classList.toggle("lightblue");
+        element.classList.toggle("purple");
+        element.classList.toggle("whitered");
     }
     else
-        element.classList.toggle("lightblue");
+        element.classList.toggle("whitered");
     }
