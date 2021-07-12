@@ -42,35 +42,35 @@ element = document.body;
 function swapmode() {
     count++;
     if(count%9==1)
-        element.classList.toggle("black");
+        element.classList.toggle("whitered");
     else if(count%9==2) {
+        element.classList.toggle("whitered");
         element.classList.toggle("black");
-        element.classList.toggle("whitegreen");
     }
     else if(count%9==3) {
-        element.classList.toggle("whitegreen");
+        element.classList.toggle("black");
         element.classList.toggle("green");
     }
     else if(count%9==4) {
         element.classList.toggle("green");
-        element.classList.toggle("brown");
+        element.classList.toggle("whitegreen");
     }
     else if(count%9==5) {
+        element.classList.toggle("whitegreen");
         element.classList.toggle("brown");
-        element.classList.toggle("whiteblue");
     }
     else if(count%9==6) {
-        element.classList.toggle("whiteblue");
+        element.classList.toggle("brown");
         element.classList.toggle("blue");
     }
     else if(count%9==7) {
         element.classList.toggle("blue");
-        element.classList.toggle("purple");
+        element.classList.toggle("whiteblue");
     }
     else if(count%9==8) {
+        element.classList.toggle("whiteblue");
         element.classList.toggle("purple");
-        element.classList.toggle("whitered");
     }
     else
-        element.classList.toggle("whitered");
+        element.classList.toggle("purple");
     }
