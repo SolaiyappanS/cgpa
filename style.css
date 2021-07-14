@@ -46,6 +46,10 @@ input:focus {
 }
 p a{
   color: var(--primary-color);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 5px;
 }
 .lable{
   color: var(--primary-color);
@@ -54,8 +58,10 @@ p a{
   font-weight: bold;
 
 }
-a:hover{
-  background-color: white;
+p a:hover{
+  background-color: var(--primary-color);
+  color: var(--placeholder-focus);
+  text-decoration: none;
   transition: 300ms;
 }
 body ::-webkit-input-placeholder {
