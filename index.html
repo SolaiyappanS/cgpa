@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <title>CGPA Calculator</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -16,19 +16,21 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
-    <title>cgpa calculator</title>
+    <script
+      src="https://kit.fontawesome.com/0a03bb24ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="backend.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <center>
           <br />
-          <h1 onclick="swapmode()">CGPA Calculator</h1>
+          <h1>
+            CGPA Calculator
+            <i onclick="swapmode()" class="fa-solid fa-circle-half-stroke"></i>
+          </h1>
           <p>
             Developed by
             <a
@@ -36,15 +38,16 @@
               >Solaiyappan Shanmuganathan</a
             >
           </p>
-
-          <p>
-            For knowing how many credits you earned, visit tng3.tce.edu
-            <br />Subtract the credit of not cleared subjects from enrolled
-            credits in that semester (if any) <br />Leave the columns which you
-            didn't get result yet unfilled <br />NEW UPDATE: Click the title to
-            change color theme
+          <p onclick="showDetails()"><a href="#" id="knowmore">Details</a></p>
+          <p id="details">
+            This Calculator will be useful for Thiagarajar College of
+            Engineering students. If you're from other College, this calculator
+            might not work for you. For knowing how many credits you earned,
+            visit <a href="https://tng3.tce.edu">TCE NET</a> <br />Subtract
+            uncleared papers' credits from total credits (if any) <br />Leave
+            the result pending semesters unfilled <br />NEW UPDATE: Click the
+            circle in the title to switch theme<br /><br />
           </p>
-          <br />
           <table class="form">
             <tr>
               <td class="lable">1st Semester:</td>
@@ -248,24 +251,5 @@
         </center>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
-<script src="backend.js"></script>

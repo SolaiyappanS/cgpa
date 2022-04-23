@@ -74,9 +74,20 @@ function calculate() {
   else document.getElementById("result").innerHTML = "Your CGPA is " + result;
 }
 
-var count = 0;
-element = document.body;
+var count = false;
+
+function showDetails() {
+  if (!count) {
+    document.getElementById("details").style.display = "contents";
+    document.getElementById("knowmore").innerHTML = "Hide details";
+    count = true;
+  } else {
+    document.getElementById("details").style.display = "none";
+    document.getElementById("knowmore").innerHTML = "Details";
+    count = false;
+  }
+}
 
 function swapmode() {
-  element.classList.toggle("white");
+  document.body.classList.toggle("white");
 }
