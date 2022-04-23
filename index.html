@@ -1,126 +1,271 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-<!doctype html>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
     <title>cgpa calculator</title>
   </head>
   <body>
     <div class="wrapper">
-	<div class="container">	<center><br>
-		<h1 onclick="swapmode()" >CGPA Calculator</h1>
-        <p>Developed by <a href="https://www.linkedin.com/in/solaiyappan-shanmuganathan-2a89121b3/">Solaiyappan Shanmuganathan</a></p>
-        
-	<p>For knowing how many credits you earned, visit tng3.tce.edu
-    <br>Subtract the credit of not cleared subjects from enrolled credits in that semester (if any)
-    <br>Leave the columns which you didn't get result yet unfilled
-    <br>NEW UPDATE: Click the title to change color theme</p>
-    <br>
-    <table class="form">
-        <tr>
-            <td class="lable">
-                1st Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa1" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-                </td><td>
-                <input type="number" id="cred1" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                2nd Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa2" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred2" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                3rd Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa3" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred3" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                4th Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa4" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred4" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                5th Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa5" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred5" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                6th Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa6" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred6" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                7th Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa7" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred7" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="lable">
-                8th Semester:
-            </td>
-            <td>
-                <input type="number" id="gpa8" placeholder="GPA" onfocus="this.placeholder=''" onblur="this.placeholder='GPA'" min="0" max="10">
-            </td><td>
-                <input type="number" id="cred8" placeholder="credits" onfocus="this.placeholder=''" onblur="this.placeholder='credits'" min="0">
-            </td>
-        </tr>
-	</table>
-    <br>
-    <button onclick="calculate()" class="button">
-        Calculate CGPA
-    </button>
-    
-    <br>
-    <div id="result"> </div><br>
-    </center>
-	</div>
-</div>
+      <div class="container">
+        <center>
+          <br />
+          <h1 onclick="swapmode()">CGPA Calculator</h1>
+          <p>
+            Developed by
+            <a
+              href="https://www.linkedin.com/in/solaiyappan-shanmuganathan-2a89121b3/"
+              >Solaiyappan Shanmuganathan</a
+            >
+          </p>
+
+          <p>
+            For knowing how many credits you earned, visit tng3.tce.edu
+            <br />Subtract the credit of not cleared subjects from enrolled
+            credits in that semester (if any) <br />Leave the columns which you
+            didn't get result yet unfilled <br />NEW UPDATE: Click the title to
+            change color theme
+          </p>
+          <br />
+          <table class="form">
+            <tr>
+              <td class="lable">1st Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa1"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred1"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">2nd Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa2"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred2"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">3rd Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa3"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred3"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">4th Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa4"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred4"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">5th Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa5"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred5"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">6th Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa6"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred6"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">7th Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa7"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred7"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="lable">8th Semester:</td>
+              <td>
+                <input
+                  type="number"
+                  id="gpa8"
+                  placeholder="GPA"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='GPA'"
+                  min="0"
+                  max="10"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="cred8"
+                  placeholder="credits"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder='credits'"
+                  min="0"
+                />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <button onclick="calculate()" class="button">Calculate CGPA</button>
+
+          <br />
+          <div id="result"></div>
+          <br />
+        </center>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
 <script src="backend.js"></script>
