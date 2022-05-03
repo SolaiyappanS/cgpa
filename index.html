@@ -22,234 +22,705 @@
     ></script>
     <script src="backend.js"></script>
   </head>
-  <body>
+  <body style="background-color: #212223">
     <div class="wrapper">
       <div class="container">
         <center>
-          <br />
-          <h1>
-            CGPA Calculator
-            <i onclick="swapmode()" class="fa-solid fa-circle-half-stroke"></i>
-          </h1>
+          <div class="h1 m-3">CGPA Calculator</div>
           <p>
             Developed by
             <a
+              class="font-weight-bold"
               href="https://www.linkedin.com/in/solaiyappan-shanmuganathan-2a89121b3/"
               >Solaiyappan Shanmuganathan</a
             >
           </p>
-          <p onclick="showDetails()"><a href="#" id="knowmore">Details</a></p>
-          <p id="details">
-            This Calculator will be useful for Thiagarajar College of
-            Engineering students.<br />If you're from other College, this
-            calculator might not work for you. <br />For knowing how many
-            credits you earned, visit
-            <a href="https://tng3.tce.edu">TCE NET</a> <br />Subtract uncleared
-            papers' credits from total credits (if any) <br />Leave the result
-            pending semesters unfilled <br />NEW UPDATE: Click the circle in the
-            title to switch theme<br /><br />
-          </p>
-          <table class="form">
-            <tr>
-              <td class="lable">1st Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa1"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred1"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">2nd Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa2"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred2"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">3rd Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa3"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred3"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">4th Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa4"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred4"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">5th Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa5"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred5"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">6th Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa6"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred6"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">7th Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa7"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred7"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="lable">8th Semester:</td>
-              <td>
-                <input
-                  type="number"
-                  id="gpa8"
-                  placeholder="GPA"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='GPA'"
-                  min="0"
-                  max="10"
-                />
-              </td>
-              <td>
-                <input
-                  type="number"
-                  id="cred8"
-                  placeholder="credits"
-                  onfocus="this.placeholder=''"
-                  onblur="this.placeholder='credits'"
-                  min="0"
-                />
-              </td>
-            </tr>
-          </table>
-          <br />
-          <button onclick="calculate()" class="button">Calculate CGPA</button>
-
-          <br />
-          <div id="result"></div>
-          <br />
+          <span
+            id="knowmore"
+            onclick="showDetails()"
+            class="btn btn-dark font-weight-bold"
+            >Details
+          </span>
+          <div class="m-3">
+            <ul id="details">
+              <li>
+                This Calculator will be useful for Thiagarajar College of
+                Engineering students.
+              </li>
+              <li>
+                If you're from the Colleges other than TCE, this calculator
+                might not work for you.
+              </li>
+              <li>Leave the result pending semesters' details unfilled.</li>
+              <li>
+                For knowing GPA of a semester, use GPA calculator (recommended).
+              </li>
+              <li>
+                For knowing the grade and credits of subjects, visit
+                <a href="https://tng3.tce.edu" class="font-weight-bold"
+                  >TCENET</a
+                >
+              </li>
+              <li>
+                Enter zero credit courses' and supplementary courses' details
+                too.
+              </li>
+              <li>Leave the extra subjects' details unfilled.</li>
+            </ul>
+          </div>
+          <div id="cgpaCalc">
+            <table class="form">
+              <tr>
+                <td>1st Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa1"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred1"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2nd Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa2"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred2"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3rd Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa3"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred3"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>4th Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa4"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred4"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>5th Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa5"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred5"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>6th Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa6"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred6"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>7th Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa7"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred7"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>8th Semester:</td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="gpa8"
+                    placeholder="GPA"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='GPA'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="cred8"
+                    placeholder="Total credits earned"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Total credits earned'"
+                    min="0"
+                  />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <span onclick="calculateCGPA()" class="btn btn-dark m-2">
+              Calculate CGPA
+            </span>
+            <div id="result" class="m-2"></div>
+            <div onclick="showGPACalc()" class="btn btn-dark m-2">
+              Go to GPA Calculator
+            </div>
+          </div>
+          <div id="gpaCalc">
+            <table class="form">
+              <tr>
+                <td>Subject 1:</td>
+                <td>
+                  <select name="grade1" id="grade1" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred1"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 2:</td>
+                <td>
+                  <select name="grade2" id="grade2" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred2"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 3:</td>
+                <td>
+                  <select name="grade3" id="grade3" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred3"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 4:</td>
+                <td>
+                  <select name="grade4" id="grade4" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred4"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 5:</td>
+                <td>
+                  <select name="grade5" id="grade5" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred5"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 6:</td>
+                <td>
+                  <select name="grade6" id="grade6" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred6"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 7:</td>
+                <td>
+                  <select name="grade7" id="grade7" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred7"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 8:</td>
+                <td>
+                  <select name="grade8" id="grade8" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred8"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 9:</td>
+                <td>
+                  <select name="grade9" id="grade9" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred9"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 10:</td>
+                <td>
+                  <select name="grade10" id="grade10" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred10"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 11:</td>
+                <td>
+                  <select name="grade11" id="grade11" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred11"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 12:</td>
+                <td>
+                  <select name="grade12" id="grade12" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred12"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 13:</td>
+                <td>
+                  <select name="grade13" id="grade13" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred13"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 14:</td>
+                <td>
+                  <select name="grade14" id="grade14" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred14"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 15:</td>
+                <td>
+                  <select name="grade15" id="grade15" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred15"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Subject 16:</td>
+                <td>
+                  <select name="grade16" id="grade16" class="btn btn-dark">
+                    <option value="0">Grade</option>
+                    <option value="10">S</option>
+                    <option value="9">A</option>
+                    <option value="8">B</option>
+                    <option value="7">C</option>
+                    <option value="6">D</option>
+                    <option value="0">U</option>
+                  </select>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    class="btn btn-dark"
+                    id="subcred16"
+                    placeholder="credits"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='credits'"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <span onclick="calculateGPA()" class="btn btn-dark m-2">
+              Calculate GPA
+            </span>
+            <span onclick="clearGPA()" class="btn btn-dark m-2">
+              Clear Data
+            </span>
+            <div id="gparesult" class="m-2"></div>
+            <div onclick="showCGPACalc()" class="btn btn-dark m-2">
+              Go back to CGPA Calculator
+            </div>
+          </div>
         </center>
+        <br /><br />
       </div>
     </div>
   </body>

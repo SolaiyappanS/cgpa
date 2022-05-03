@@ -1,85 +1,28 @@
-body {
-  background: linear-gradient(
-    to bottom right,
-    var(--accent-color) 0%,
-    var(--gradient-color) 100%
-  );
-  --accent-color: #212121;
-  --gradient-color: #212121;
-  --placeholder-focus: #222222;
-  --primary-color: #cccccc;
-  --background-color: #ffffff2a;
-}
 .container {
-  color: var(--primary-color);
-  font-weight: bold;
+  color: #ddd;
 }
-input,
-button,
-h1 {
-  outline: 0;
-  border: 2px solid var(--border-color);
-  background-color: var(--background-color);
-  width: 90px;
-  border-radius: 6px;
-  padding: 10px;
-  padding-right: 0;
-  text-align: center;
-  color: var(--primary-color);
-  --placeholder-color: var(--primary-color);
-  transition: 300ms;
-  font-weight: bold;
-}
-h1 {
-  width: 400px;
-  cursor: pointer;
-}
-.button {
-  width: 150px;
-  padding-left: 0;
-  display: block;
-  border-radius: 6px;
-}
-input:hover,
-button:hover,
-h1:hover {
-  background-color: var(--primary-color);
-  color: var(--placeholder-focus);
-  --placeholder-color: var(--placeholder-focus);
-}
-input:focus {
-  background-color: var(--primary-color);
-  color: var(--placeholder-focus);
-}
-p a {
-  color: var(--primary-color);
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 2px;
-  border-radius: 5px;
-}
-.lable {
-  color: var(--primary-color);
-  text-align: right;
-  padding-right: 10px;
-  font-weight: bold;
-}
-p a:hover {
-  background-color: var(--primary-color);
-  color: var(--placeholder-focus);
+p a:hover,
+div a:hover {
+  color: #ddd;
   text-decoration: none;
-  transition: 300ms;
 }
 body ::-webkit-input-placeholder {
-  color: var(--placeholder-color);
-}
-.white {
-  --accent-color: #dddddd;
-  --gradient-color: #dddddd;
-  --placeholder-focus: #dddddd;
-  --primary-color: #373942;
-  --background-color: #00000044;
+  color: #ddd;
 }
 #details {
   display: none;
+  text-align: left;
+}
+#cgpaCalc {
+  display: block;
+}
+#gpaCalc {
+  display: none;
+}
+td {
+  color: #ddd;
+  text-align: right;
+  padding-left: 10;
+  padding-top: 5;
+  padding-bottom: 5;
 }
