@@ -84,3 +84,13 @@ function showCGPACalc() {
   document.getElementById("gpaCalc").style.display = "none";
   document.getElementById("cgpaCalc").style.display = "block";
 }
+
+function showMore() {
+  if (document.getElementById("showBtn").innerHTML !== "Show less Subjects") {
+    document.getElementById("showBtn").innerHTML = "Show less Subjects";
+    document.getElementById("moreSubjects").style.display = "contents";
+  } else {
+    document.getElementById("showBtn").innerHTML = "Show more Subjects";
+    document.getElementById("moreSubjects").style.display = "none";
+  }
+}
